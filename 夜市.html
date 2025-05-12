@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>夜市呷透透</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+    }
+
+    header {
+      background-color: #ff6b6b;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .top-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 0.4rem;
+      width: 200px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+    }
+
+    .search-bar button {
+      padding: 0.4rem 0.8rem;
+      background-color: white;
+      color: #ff6b6b;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      margin-left: 1rem;
+    }
+
+    main {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .top-right {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+    .food-card {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden; /* 🔥 重點：防止圖片溢出卡片邊框 */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .food-card img {
+    width: 100%;          /* 🔥 寬度撐滿卡片 */
+    height: 200px;        /* 固定高度 */
+    object-fit: cover;    /* 🔥 重點：讓圖片自動裁切填滿區域，不變形 */
+    display: block;
+    border-bottom: 1px solid #eee; /* 可有可無，美觀分隔線 */
+  }
+  .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">夜市呷透透</div>
+
+    <div class="top-right">
+      <div class="search-bar">
+        <input type="text" placeholder="搜尋夜市美食...">
+        <button>搜尋</button>
+      </div>
+      <nav>
+        <a href="#">首頁</a>
+        <a href="#">熱門攤位</a>
+        <a href="#">關於我們</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>歡迎來到夜市呷透透！</h2>
+    <p>這裡收錄了台灣各地夜市的必吃美食、人氣攤販與地圖資訊。</p>
+      <section style="padding: 2rem;">
+    <h2>精選夜市美食推薦 🍢</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem;">
+      <div class="card-container">
+
+      <div class="food-card">
+      <!-- 卡片1：逢甲夜市 -->
+      
+        <h3>逢甲夜市 — 明倫蛋餅</h3>
+        <img src="01.png" alt="明倫蛋餅">
+        <p><strong>價格：</strong>50元/份</p>
+        <p>蛋餅皮Q彈香濃，搭配甜辣醬超滿足。</p>
+        <a href="逢甲夜市.html" style="color: #ff6b6b; font-weight: bold;">👉 查看更多</a>
+
+        <h3>一中街夜市 — 豐味綠豆沙牛乳</h3>
+        <img src="02.png" alt="豐味綠豆沙牛乳">
+        <p><strong>價格：</strong>50元/份</p>
+        <p>每一口都滑順香甜、不膩口，冰冰涼涼超消暑</p>
+        <a href="一中街夜市.html" style="color: #ff6b6b; font-weight: bold;">👉 查看更多</a>
+        
+        <h3>忠孝路夜市 — 味泉米糕</h3>
+        <img src="03.png" alt="味泉米糕">
+        <p><strong>價格：</strong>50元/份</p>
+        <p>正是因為這傳統的好滋味，令人念念不忘。</p>
+        <a href="忠孝路夜市.html" style="color: #ff6b6b; font-weight: bold;">👉 查看更多</a>
+
+        <h3>大慶夜市 — 麻糬屋炸麻糬</h3>
+        <img src="03.png" alt=" 麻糬屋炸麻糬">
+        <p><strong>價格：</strong>30-50元/份</p>
+        <p>炸麻糬的表皮酥酥脆脆的，但裡頭Q軟帶有彈性</p>
+        <a href="大慶夜市.html" style="color: #ff6b6b; font-weight: bold;">👉 查看更多</a>
+
+        <h3>中華路夜市 — 老牌沙茶牛肉</h3>
+        <img src="03.png" alt="老牌沙茶牛肉">
+        <p><strong>價格：</strong>30-50元/份</p>
+        <p>這裡最有名的是牛肉炒麵、牛肉湯，很適合半夜解饞</p>
+        <a href="中華路夜市.html" style="color: #ff6b6b; font-weight: bold;">👉 查看更多</a>
+
+         <h3>豐原廟東夜市—廟東清蒸蝦仁肉圓</h3>
+        <img src="03.png" alt="廟東清蒸蝦仁肉圓">
+        <p><strong>價格：</strong>30-50元/份</p>
+        <p>每一顆肉圓都給了一整尾蝦子</p>
+        <a href="豐原廟東夜市.html" style="color: #ff6b6b; font-weight: bold;">👉 查看更多</a>
+
+        <h3>東海夜市—東海刈包大王</h3>
+        <img src="03.png" alt="東海刈包大王">
+        <p><strong>價格：</strong>30-50元/份</p>
+        <p>主打雞腿排與五花肉，會加花生粉、酸菜、香菜</p>
+        <a href="豐原廟東夜市.html" style="color: #ff6b6b; font-weight: bold;">👉 查看更多</a>
+
+        <h3>旱溪夜市—正豐原祖傳鳳梨冰</h3>
+        <img src="03.png" alt="正豐原祖傳鳳梨冰">
+        <p><strong>價格：</strong>30-50元/份</p>
+        <p>主打雞腿排與五花肉，會加花生粉、酸菜、香菜</p>
+        <a href="旱溪夜市.html" style="color: #ff6b6b; font-weight: bold;">👉 查看更多</a>
+
+        <h3>梧棲中港觀光夜市—九記煎餃水煎包</h3>
+        <img src="03.png" alt="九記煎餃水煎包">
+        <p><strong>價格：</strong>30-50元/份</p>
+        <p>煎餃外皮軟Q、豬肉餡飽滿鮮甜超好吃</p>
+        <a href="梧棲中港觀光夜市.html" style="color: #ff6b6b; font-weight: bold;">👉 查看更多</a>
+
+        <h3>總站夜市—日好食事 雞蛋糕</h3>
+        <img src="03.png" alt="日好食事 雞蛋糕">
+        <p><strong>價格：</strong>30-50元/份</p>
+        <p>無油、無泡打粉、無香料，吃起來不會脹氣的雞蛋糕</p>
+        <a href="總站夜市.html" style="color: #ff6b6b; font-weight: bold;">👉 查看更多</a>
+</div>
+      </div>
+   </div>
+</section>
+
+  </main>
+
+</body>
+</html>
